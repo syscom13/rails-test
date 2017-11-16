@@ -1,5 +1,6 @@
 <%= simple_form_for @product do |f| %>
-  <%= f.input :name, label: "Product ?" %>
-  <%= f.input :url, label: "Url ?" %>
+  <%= f.input :name, placeholder: "Station", label: "Product ?" %>
+  <%= f.input :url, placeholder: "http://getstation.com", label: "Url ?" %>
+  <%= f.input :tagline, placeholder: "One app to rule them all", label: "Tagline ?" %>
   <%= f.button :submit, "Submit", class: "btn btn-primary" %>
 <% end %>
