@@ -2,5 +2,7 @@
   <h1>Wagon Hunt</h1>
   <p>Bienvenue sur le clone de Product Hunt</p>
 
-  <p>We have 4 new products on <%= @today %></p>
+  <p>Check out all the new products on <%= @today %></p>
+
+  <p><%= link_to "Voir les produits", products_path, class: "btn btn-primary" %></p>
 </div>

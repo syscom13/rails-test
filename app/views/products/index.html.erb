@@ -2,8 +2,13 @@
   All Products
 </h1>
 
+<p>
+  <%= link_to "Revenir à l'accueil", root_path, class: "btn btn-primary" %>
+  <%= link_to "Ajouter un produit", new_product_path, class: "btn btn-success" %>
+</p>
+
 <ul>
   <% @products.each do |product| %>
-    <li><%= product.name %> (<%= link_to "show", product_path(product), target: :_blank %>)</li>
+    <li><%= product.name %> <%= link_to "show", product_path(product)%></li>
   <% end %>
 </ul>

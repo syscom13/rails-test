@@ -3,11 +3,17 @@
 </h1>
 
 <p class="text-center">
-  Name:
   <%= @product.name %>
 </p>
 
 <p class="text-center">
-  Url:
+  <%= @product.tagline %>
+</p>
+
+<p class="text-center">
   <%= link_to @product.url, @product.url, target: :_blank %>
+</p>
+
+<p class="text-center">
+  <%= link_to "Retour", products_path, class: "btn btn-primary" %>
 </p>
