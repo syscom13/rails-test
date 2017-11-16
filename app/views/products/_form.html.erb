@@ -1,0 +1,5 @@
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name, label: "Product ?" %>
+  <%= f.input :url, label: "Url ?" %>
+  <%= f.button :submit, "Submit", class: "btn btn-primary" %>
+<% end %>
