@@ -12,7 +12,7 @@ Product.create(name: "Hunter", url: "http://hunter.io",
 Product.create(name: "Station", url: "http://getstation.com",
                                tagline: "One app to rule them all",
                                category: "tech")
-Product.create(name: "Hunter", url: "http://www.invisionapp.com",
+Product.create(name: "InVision", url: "http://www.invisionapp.com",
                                tagline: "Prototyping and collaboration for design teams",
                                category: "design")
 Product.create(name: "Sketch", url: "http://sketchapp.com",
