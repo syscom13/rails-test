@@ -11,9 +11,15 @@
   flex: 1 1 auto;
 }
 .product-body h3 {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 23px;
   margin-top: 0;
+    a:link, a:visited {
+      color: #333;
+    }
+    a:hover, a:active {
+      text-decoration: none;
+    }
 }
 .product-body p {
   font-weight: lighter;
@@ -30,12 +36,25 @@
 
 /* Upvote design */
 .product-upvote {
+  display: inline-block;
   padding-right: 20px;
   text-align: center;
   transition: all 0.15s ease;
   font-weight: bold;
   font-size: 13px;
   line-height: 20px;
+}
+.product-upvoted, a.product-upvote.product-upvoted  {
+  color: #5898f1;
+}
+.product-upvoted .product-arrow {
+  border-bottom-color: #5898f1;
+}
+a.product-upvote {
+  color: black;
+  &:hover, &:visited, &:active, &:focus {
+    text-decoration: none;
+  }
 }
 .product-count {
   margin: 2px 0 0;
@@ -86,12 +105,6 @@
 .product-upvote-upvoted .product-arrow {
   border-bottom-color: #5898f1;
 }
-// .product:hover .product-upvote {
-//   transform: scale(1.2)
-// }
-.product:hover .product-controls-hidden a {
-  color: #E6E6E6;
-}
-.product-upvote:hover .product-arrow {
-  border-bottom: 9px solid #5898f1;
-}
+// .product:hover .product-upvote { transform: scale(1.2) }
+.product:hover .product-controls-hidden a { color: #E6E6E6 }
+.product-upvote:hover .product-arrow { border-bottom: 9px solid #5898f1 }
