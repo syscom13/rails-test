@@ -1,0 +1,9 @@
+<h1 class="text-center">
+  All Products
+</h1>
+
+<ul>
+  <% @products.each do |product| %>
+    <li><%= product.name %> (<%= link_to "show", product_path(product), target: :_blank %>)</li>
+  <% end %>
+</ul>

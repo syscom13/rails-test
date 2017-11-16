@@ -1,0 +1,13 @@
+<h1 class="text-center">
+  Le détail du produit
+</h1>
+
+<p class="text-center">
+  Name:
+  <%= @product.name %>
+</p>
+
+<p class="text-center">
+  Url:
+  <%= link_to @product.url, @product.url, target: :_blank %>
+</p>
