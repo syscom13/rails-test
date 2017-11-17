@@ -3,13 +3,20 @@ class UpvotesController < ApplicationController
     @product = Product.find(params[:product_id])
     @product.upvotes.create! user: current_user
 
-    redirect_to products_path
+    respond_to do |format|
+      format.html { redirect_to products_path }
+      format.js
+    end
   end
 
   def destroy
     upvote = Upvote.find(params[:id])
     @product = upvote.product
     upvote.destroy
-    redirect_to products_path
+
+    respond_to do |format|
+      format.html { redirect_to products_path }
+      format.js
+    end
   end
 end
